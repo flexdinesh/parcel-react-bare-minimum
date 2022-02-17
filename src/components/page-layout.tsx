@@ -7,7 +7,6 @@ export const PageLayout: React.FC = ({ children }) => {
     <React.Fragment>
       <nav
         css={{
-          // background: "#E6E9ED",
           height: 72,
           display: "flex",
           gap: 8,

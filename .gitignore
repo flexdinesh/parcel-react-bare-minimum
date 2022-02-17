@@ -1,6 +1,6 @@
 # build
-/storybook-static
 .parcel-cache
+parcel-bundle-reports
 build
 dist
 

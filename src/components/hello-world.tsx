@@ -1,11 +1,11 @@
 import React from 'react';
 
 type Props = {
-  greetings?: string;
+  name?: string;
 };
 
 export const HelloWorld: React.FC<Props> = ({
-  greetings = 'Jane',
+  name = 'Jane',
 }) => {
-  return <div>Hello, {greetings}!</div>;
+  return <div>Hello, {name}!</div>;
 };
