@@ -1,24 +1,24 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import { css } from '@emotion/react';
-
-const styles = {
-  app: css`
-    height: 100vh;
-    text-align: center;
-  `,
-  main: css`
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  `,
-};
+import { Link } from "react-router-dom";
 
 export const PageLayout: React.FC = ({ children }) => {
   return (
-    <div css={styles.app}>
-      <main css={styles.main}>{children}</main>
-    </div>
+    <React.Fragment>
+      <nav
+        css={{
+          // background: "#E6E9ED",
+          height: 72,
+          display: "flex",
+          gap: 8,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
+      <main css={{ padding: 8 }}>{children}</main>
+    </React.Fragment>
   );
 };
